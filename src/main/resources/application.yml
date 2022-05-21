@@ -1,0 +1,15 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: docker-service
+  datasource:
+    username: caiyongjian
+    password: As123456
+    url: jdbc:mysql://rm-bp10bwpb1rjcx68aaho.mysql.rds.aliyuncs.com:3306/dvstudio?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  configuration:
+    jdbc-type-for-null: 'null'
+    map-underscore-to-camel-case: true
